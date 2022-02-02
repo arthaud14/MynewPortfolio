@@ -10,7 +10,7 @@ export default function Home() {
     <div className="">
       <Layout className="Accueil">
         
-           <h1 className="text-black z-10 absolute w-full text-center mt-10 text-xl">
+           <h1 className="text-black z-10 absolute w-full text-center mt-10 text-2xl">
             Arthaud PRIMEVERT
           </h1> 
           <h3 className="text-black z-10 absolute mt-20 text-center w-full">
