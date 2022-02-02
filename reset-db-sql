@@ -5,4 +5,4 @@ CREATE TABLE Projects (
     description TEXT NOT NULL,
     PRIMARY KEY (id));
 
-    INSERT INTO Projects (id, mainPictureUrl, title, description) VALUES (1, 'https://imagizer.imageshack.com/img922/8820/TbGbHA.jpg', 'Projet N°1', 'Le Lyon des Saisons'),(2,'https://i.postimg.cc/QtrwrQtf/Capture-d-e-cran-2022-01-06-a-15-19-00.png ', 'Projet N°2','MyFood'),(3,'https://i.postimg.cc/Jh70SmGp/Capture-d-e-cran-2022-01-11-a-11-28-48.png ', 'Projet N°3','Devis'); 
+    INSERT INTO Projects (id, mainPictureUrl, title, description) VALUES (1, 'https://ucarecdn.com/a3611656-7849-46bd-b1d7-7581fd307cd3/32328366830_50ff2e7bb2_c1.jpg', 'Projet N°1', 'Le Lyon des Saisons'),(2,'https://ucarecdn.com/6b43caee-ef04-4adc-8441-d08c467f743d/Capturedecran20220202a165025.png ', 'Projet N°2','MyFood'),(3,'https://ucarecdn.com/1e995ec7-662e-44aa-afdf-4a8923312867/Capturedecran20220111a112848copie.png ', 'Projet N°3','Devis'); 

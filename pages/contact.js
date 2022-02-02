@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import lyonuniversity from "../public/img/lyonuniversity.jpg";
 import Image from "next/image";
 import { useRef } from "react";
-import Swal from "sweetalert2";
+
 import emailjs from "@emailjs/browser";
 import { init } from "@emailjs/browser";
 init("user_fiq8u5W728Z06uP64FZbk");
@@ -32,12 +32,13 @@ export default function Contact() {
   return (
     <Layout>
       <form ref={form} onSubmit={sendEmail} className="flex w-full space-x-3">
-        <div className="items-center w-full max-w-2xl px-5 py-10 m-auto mt-6 bg-white border-solid border-2 rounded-lg shadow dark:bg-gray-800 mb-20">
+        <div className="items-center w-full max-w-2xl pb-4 m-auto mt-6 bg-white border-solid border-2 rounded-lg shadow dark:bg-gray-800 mb-20">
           <Image
             className="bg-cover rounded-md"
             src={lyonuniversity}
             layout="responsive"
             alt="image university"
+            
           />
           <div className="mb-6 mt-6 text-3xl font-light text-center text-gray-800 dark:text-white">
             Contactez moi !!
