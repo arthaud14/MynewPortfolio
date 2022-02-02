@@ -1,0 +1,8 @@
+CREATE TABLE Projects ( 
+    id INT NOT NULL AUTO_INCREMENT,
+    mainPictureUrl TEXT NOT NULL,
+    title VARCHAR (200) NOT NULL,
+    description TEXT NOT NULL,
+    PRIMARY KEY (id));
+
+    INSERT INTO Projects (id, mainPictureUrl, title, description) VALUES (1, 'https://imagizer.imageshack.com/img922/8820/TbGbHA.jpg', 'Projet N°1', 'Le Lyon des Saisons'),(2,'https://i.postimg.cc/QtrwrQtf/Capture-d-e-cran-2022-01-06-a-15-19-00.png ', 'Projet N°2','MyFood'),(3,'https://i.postimg.cc/Jh70SmGp/Capture-d-e-cran-2022-01-11-a-11-28-48.png ', 'Projet N°3','Devis'); 
