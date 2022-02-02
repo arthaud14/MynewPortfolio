@@ -31,8 +31,8 @@ export default function Header({ name }) {
                         </a>
                     </Link>
                 </li>
-                <li className="text-black m-2 mt-3 mr-6">
-                    <Link href="/project">
+                <li className="text-black m-2 mr-4">
+                    <Link href="/admin">
                         <a className="hover:text-white uppercase" layout="responsive">
                         <FontAwesomeIcon icon={faUserAstronaut} size="2x" />
                         </a>
