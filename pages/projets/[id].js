@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
 import { getOneProject, getProjects } from "../../models/project";
-import Image from "next/image";
+
 
 
 
@@ -9,15 +9,18 @@ export default function oneProject({ oneProject }) {
     <div>
       <Layout name="project">
         <h1 className="text-center mt-6 mb-6 text-2xl">{oneProject.title}</h1>
-        <Image
-          className="bg-cover rounded-md"
+        <div className="flex justify-center">
+        <img
+          className="mb-6"
           src={oneProject.mainPictureUrl}
-          width="50%"
-          height="50%"
+          width="70%"
+          height="70%"
           layout="responsive"
           alt="image du projet"
 
         />
+        </div>
+        
         <p className="text-center text-xl">{oneProject.description}</p>
       </Layout>
     </div>

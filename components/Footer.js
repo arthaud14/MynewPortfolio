@@ -34,6 +34,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faFlickr} size="2x" />
             </a>
           </li>
+          
         </ul>
       </div>
       <div className="text-sm text-center dark:text-gray-50">2022 Copyright - Arthaud PRIMEVERT</div>
