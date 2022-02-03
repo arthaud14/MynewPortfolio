@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 
-export default function projets() {
+export default function Projets() {
     return (
         <div>
             <Layout>

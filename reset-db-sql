@@ -10,3 +10,17 @@ CREATE TABLE Projects (
     PRIMARY KEY (id));
 
     INSERT INTO Projects (id, mainPictureUrl, project, title, description, technology, team, url) VALUES (1, 'https://ucarecdn.com/a3611656-7849-46bd-b1d7-7581fd307cd3/32328366830_50ff2e7bb2_c1.jpg', 'Projet N°1', 'Le Lyon des Saisons', 'Site internet regroupant les événements sur Lyon par saison', 'HTML, CSS, JAVASCRIPT', 'Florence Martin, Solène Verrier, Bastien Le Calvez, Nicolas Chavanoud', 'https://lyon-des-saisons.netlify.app/'),(2,'https://ucarecdn.com/6b43caee-ef04-4adc-8441-d08c467f743d/Capturedecran20220202a165025.png ', 'Projet N°2','MyFood', 'Site internet de recettes afin de préparer ses repas pour la semaine', 'REACTJS, TAILWINDCSS, API, MySQL', 'Solène Verrier, Eder Goncalves, Yannis Barba', 'https://lyon-js-sept21-p2-g3-front.comicscrip.duckdns.org/'),(3,'https://ucarecdn.com/1e995ec7-662e-44aa-afdf-4a8923312867/Capturedecran20220111a112848copie.png ', 'Projet N°3','Devis', 'Site intenet de vente d''articles pour les professionnels et les associations avec une gestion des devis', 'NEXTJS, PRISMA, TAILWINDCSS', 'Séléna Poun, Solène Verrier, Bastien Le Calvez', 'https://cecisoweb.ovh/'); 
+
+    CREATE TABLE User (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR (200) NOT NULL,
+        email VARCHAR (200) NOT NULL,
+        hashedPassword VARCHAR(64) NOT NULL,
+        role VARCHAR(64) NOT NULL,
+        PRIMARY KEY (id));
+
+    INSERT INTO User (id, name, email, hashedPassword, role) VALUES (1, 'primevert', 'arthaud.primevert@gmail.com', 'Cocotiti14AF!', 'admin');
+
+    )
+
+    

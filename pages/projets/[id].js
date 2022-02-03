@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout";
 import { getOneProject, getProjects } from "../../models/project";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserAstronaut, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function oneProject({ oneProject }) {
