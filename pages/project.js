@@ -6,12 +6,13 @@ import Image from "next/image";
 export default function Project({ projects }) {
   return (
     <Layout>
-      <h1 className="text-center mt-10 uppercase mb-10">Mes projets</h1>
-      <ul className="flex flex-row justify-center w-full">
+      <h1 className="text-center mt-10 uppercase mb-10">Mes projets à la Wild Code School</h1>
+      
+      <ul className="flex flex-col justify-center items-center w-full md:flex-row mb-20">
         {projects.map((data) => {
           return (
             <Link href={`/projets/${data.id}`}>
-              <li className="bg-gray-200 list-none w-80 flex flex-col items-center rounded-3xl border-solid m-6 ">
+              <li className="cursor-pointer bg-gray-200 list-none w-80 flex flex-col items-center rounded-3xl border-solid m-6 shadow-2xl">
                 <h2 className="m-4 text-xl">{data.project}</h2>
                 <img
                   src={data.mainPictureUrl}
@@ -20,7 +21,7 @@ export default function Project({ projects }) {
                   layout="reponsive"
                   alt="image projet"
                 />
-                <p className="text-xl">{data.title}</p>
+                <p className="text-xl m-4">{data.title}</p>
               </li>
             </Link>
           );
