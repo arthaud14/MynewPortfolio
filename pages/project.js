@@ -12,7 +12,7 @@ export default function Project({ projects }) {
           return (
             <Link href={`/projets/${data.id}`}>
               <li className="bg-gray-200 list-none w-80 flex flex-col items-center rounded-3xl border-solid m-6 ">
-                <h2 className="m-4 text-xl">{data.title}</h2>
+                <h2 className="m-4 text-xl">{data.project}</h2>
                 <img
                   src={data.mainPictureUrl}
                   width="100%"
@@ -20,7 +20,7 @@ export default function Project({ projects }) {
                   layout="reponsive"
                   alt="image projet"
                 />
-                <p className="text-xl">{data.description}</p>
+                <p className="text-xl">{data.title}</p>
               </li>
             </Link>
           );
