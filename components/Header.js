@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
-import { signIn } from "next-auth/react"
+import { signIn } from "next-auth/react";
 
 export default function Header({ name }) {
   return (
@@ -31,11 +31,13 @@ export default function Header({ name }) {
           </Link>
         </li>
         <li className="text-black m-2 mr-4">
-            
           <a className="hover:text-white uppercase" layout="responsive">
-            <FontAwesomeIcon icon={faUserAstronaut} size="2x" onClick={() => signIn ()} />
+            <FontAwesomeIcon
+              icon={faUserAstronaut}
+              size="2x"
+              onClick={() => signIn()}
+            />
           </a>
-          
         </li>
       </ul>
     </div>
