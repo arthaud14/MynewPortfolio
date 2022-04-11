@@ -1,5 +1,3 @@
-import axios from "axios";
-import { delBasePath } from "next/dist/shared/lib/router/router";
 import connection from "../db-config";
 
 export async function getProjects() {

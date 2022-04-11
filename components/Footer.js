@@ -1,16 +1,11 @@
-import next from "next";
-import styles from "../styles/Home.module.css";
-import Link from "next/Link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faFlickr } from "@fortawesome/free-brands-svg-icons";
 
-
-
 export default function Footer() {
-    return(
-        <footer className="fixed bottom-0 left-0 w-full bg-gray-200">
+  return (
+    <footer className="fixed bottom-0 left-0 w-full bg-gray-200">
       <div className="max-w-screen-xl mx-auto px-4 h-10">
         <ul className="w-full h-full flex justify-center items-center">
           <li>
@@ -34,11 +29,11 @@ export default function Footer() {
               <FontAwesomeIcon icon={faFlickr} size="2x" />
             </a>
           </li>
-          
         </ul>
       </div>
-      <div className="text-sm text-center dark:text-gray-50">2022 Copyright - Arthaud PRIMEVERT</div>
+      <div className="text-sm text-center dark:text-gray-50">
+        2022 Copyright - Arthaud PRIMEVERT
+      </div>
     </footer>
   );
 }
-

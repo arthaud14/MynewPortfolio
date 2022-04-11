@@ -3,6 +3,7 @@ import { getOneProject, getProjects } from "../../models/project";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function oneProject({ oneProject }) {
   return (
@@ -10,7 +11,7 @@ export default function oneProject({ oneProject }) {
       <Layout name="project">
         <h1 className="text-center mt-6 mb-6 text-2xl">{oneProject.project}</h1>
         <div className="flex justify-center">
-          <img
+          <Image
             className="mb-6 rounded-lg"
             src={oneProject.mainPictureUrl}
             width="70%"
