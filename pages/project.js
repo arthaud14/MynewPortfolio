@@ -11,15 +11,15 @@ export default function Project({ projects }) {
       <ul className="flex flex-col justify-center items-center w-full md:flex-row mb-20">
         {projects.map((data) => {
           return (
-            <Link href={`/projets/${data.id}`}>
+            <Link key={`/projets/${data.id}`} passHref>
               <li className="cursor-pointer bg-gray-200 list-none w-80 flex flex-col items-center rounded-3xl border-solid m-6 shadow-2xl">
                 <h2 className="m-4 text-xl">{data.project}</h2>
-                <img
+                <Image
                   src={data.mainPictureUrl}
                   width="100%"
                   height="100%"
                   layout="reponsive"
-                  alt="image projet"
+                  alt="projectimg"
                 />
                 <p className="text-xl m-4">{data.title}</p>
               </li>
